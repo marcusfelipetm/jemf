@@ -1,0 +1,75 @@
+﻿******************************************************************************
+******************************************************************************
+*									     *
+*		JEMF - Java Emergency Management Framework                   *
+*									     *
+******************************************************************************
+******************************************************************************
+Change log for JEMF
+
+************************ Version 0.3 (22/07/2014): ***************************
+====== Core: ======
+* added new abstract classes that compose Core module, such as AbstractBase 
+  class;
+* many minor changes
+
+====== Mobile: ======
+* added new View classes, responsible to manipulate interface components;
+* added new Adapter classes, responsible to mediate between controller and 
+  view classes;
+* added new Loader classes, responsible to query data from database and
+  populate views;
+* added new Manager classes, responsible to manipulate data (controller
+  classes);
+* added new Bean classes (model classes);
+* many changes for provider and database classes, adapting to project's
+  restructuration;
+* many minor changes
+
+====== Utils: ======
+* added new methods properly into Format and Conversions classes;
+* many minor changes
+
+
+
+************************ Version 0.2 (27/03/2014): ***************************
+* added Project Javadoc
+====== Core: ======
+* added new abstract classes that compose Core module, such as Enumeration for
+  Contact Status;
+* many minor changes
+
+====== Mobile: ======
+* added CustomBuildConfig class to change main JEMF build configurations;
+* added CustomProviderChecker class to verify JEMF provider configurations;
+* added comments to all classes;
+* many minor changes
+
+====== Utils: ======
+* organized Format classes and methods properly into new classes;
+* added comments to all classes;
+* many minor changes
+
+
+
+************************ Version 0.1 (03/01/2014): ***************************
+====== Core: ======
+* added all Emergency Management abstract classes that compose Core module;
+* added folders Coordination, Cooperation and Communication to separate the 
+  abstract classes;
+* many minor changes
+
+====== Mobile: ======
+* added abstract and concrete classes that compose mobile module, extending 
+  and specializing Android classes, such as Database and Layout;
+* added concrete classes to extend Core module, forming the model classes 
+  (M of MVC pattern);
+* added concrete classes to manipulate the interface components, forming the
+  view classes (V of MVC pattern);
+* added concrete classes to manage data and specializing methods, forming the 
+  controllers classes (C of MVC pattern);
+* many minor changes
+
+====== Utils: ======
+* added all support classes that compose Utils module, such as String and 
+  DateTime conversions, Log, etc.;

@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.ufrj.ppgi.jemf"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+
+
+    <!-- #JEMF BEGIN
+
+	### 1° REQUIREMENT ###
+    ************************************************************************************************
+    * All new application project that uses JEMF must add this properties in manifest!
+    * This properties will guarantee that your project uses the content provider to save/read JEMF's database.
+    * The first, permission tag, must be included inside manifest`s tag (<manifest>...</manifest>).
+    * Preferably included before application`s tag (<application>...</application>).
+    ************************************************************************************************
+
+		    <permission
+		        android:name="br.ufrj.ppgi.jemf.mobile.provider.ACCESS_DATA"
+		    	android:protectionLevel="signature"
+		    />
+
+    ************************************************************************************************
+    * The second, provider tag, must be included inside application`s tag (<application>...</application>)!
+    * But outside activity`s tag (<activity>...</activity>) or others tags.
+    * Preferably included at the end of application`s tag (<application>...</application>), after activity`s tag. 
+    ************************************************************************************************
+
+			<provider
+	            android:name="br.ufrj.ppgi.jemf.mobile.provider.CustomProvider"
+	            android:authorities="br.ufrj.ppgi.jemf.mobile.provider"
+				android:label="@string/app_name"
+	            android:enabled="true"
+		        android:exported="false"
+		        android:permission="br.ufrj.ppgi.jemf.mobile.provider.ACCESS_DATA" >
+	        </provider>
+
+
+
+	### 2° REQUIREMENT ###
+	************************************************************************************************
+	* If your project requires a development of a second application, or a service, etc.
+	* And it needs to share data between the primary application and the secondary application,
+	* Then in the second application manifest must be included just a uses permission tag (<uses-permission />)
+	************************************************************************************************
+
+			<uses-permission android:name="br.ufrj.ppgi.jemf.mobile.provider.ACCESS_DATA" />
+
+	************************************************************************************************
+	* Also, in the provider's tag of primary application must be edited the "exported" properties to "true"   
+	************************************************************************************************
+	
+		   android:exported="true"
+
+
+
+	### 3° REQUIREMENT ###
+	************************************************************************************************
+	* If your project requires to save JEMF Log messages and make readable to other application,
+	* Then in the application manifest must be included a uses permission tag (<uses-permission />)
+	* And use method startLog(TRUE) when create a CustomLogger instance. 
+	************************************************************************************************
+
+    		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    #JEMF END -->
+
+
+
+    </application>
+</manifest>

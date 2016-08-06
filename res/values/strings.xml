@@ -1,0 +1,28 @@
+<!--
+/**********************************************************************************
+ * JEMF Copyright (c) 2014, Marcus Machado, Graduate Program on Informatics (PPGI),
+ * Federal University of Rio de Janeiro (UFRJ), All rights reserved.
+ *  
+ *   This program is free software: you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation, either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ * Java Emergency Management Framework - JEMF
+ *********************************************************************************/
+-->
+<resources>
+
+    <string name="app_name">jemf</string>
+    <string name="app_read_jemf_db">read_jemf_db</string>
+    <string name="app_write_jemf_db">write_jemf_db</string>
+
+</resources>

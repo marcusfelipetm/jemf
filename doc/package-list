@@ -1,0 +1,15 @@
+br.ufrj.ppgi.jemf
+br.ufrj.ppgi.jemf.core
+br.ufrj.ppgi.jemf.core.communication
+br.ufrj.ppgi.jemf.core.cooperation
+br.ufrj.ppgi.jemf.core.coordination
+br.ufrj.ppgi.jemf.mobile
+br.ufrj.ppgi.jemf.mobile.adapter
+br.ufrj.ppgi.jemf.mobile.bean
+br.ufrj.ppgi.jemf.mobile.database
+br.ufrj.ppgi.jemf.mobile.factory
+br.ufrj.ppgi.jemf.mobile.loader
+br.ufrj.ppgi.jemf.mobile.manager
+br.ufrj.ppgi.jemf.mobile.provider
+br.ufrj.ppgi.jemf.mobile.view
+br.ufrj.ppgi.jemf.utils
